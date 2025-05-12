@@ -8,7 +8,6 @@ use Google\Client;
 use Google\Service\Calendar;
 use Google\Service\Calendar\Event;
 
-
 class IntegrationController extends Controller
 {
     public function googleDrive()

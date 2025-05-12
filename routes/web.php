@@ -8,5 +8,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/upload', [IntegrationController::class, 'googleDrive']);
-Route::get('/event', [IntegrationController::class, 'googleCalendar']);
+Route::controller(IntegrationController::class)->group(function () {
+    Route::get('/upload', 'googleDrive');
+    Route::get('/event', 'googleCalendar');
+});
