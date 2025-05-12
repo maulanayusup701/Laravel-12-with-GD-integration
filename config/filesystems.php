@@ -62,11 +62,11 @@ return [
 
         'google' => [
             'driver' => 'google',
-            'clientId' => env('GOOGLE_DRIVE_CLIENT_ID'),
-            'clientSecret' => env('GOOGLE_DRIVE_CLIENT_SECRET'),
-            'accessToken' => env('GOOGLE_DRIVE_ACCESS_TOKEN'), // optional
-            'refreshToken' => env('GOOGLE_DRIVE_REFRESH_TOKEN'),
-            'folder' => env('GOOGLE_DRIVE_FOLDER'),
+            'clientId' => env('GOOGLE_CLIENT_ID'),
+            'clientSecret' => env('GOOGLE_CLIENT_SECRET'),
+            'accessToken' => env('GOOGLE_ACCESS_TOKEN'), // optional
+            'refreshToken' => env('GOOGLE_REFRESH_TOKEN'),
+            'folder' => env('GOOGLE_FOLDER'),
         ]
     ],
 
